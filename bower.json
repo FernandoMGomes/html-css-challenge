@@ -1,0 +1,27 @@
+{
+  "name": "html-css-test",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "FernandoGomes <fernandogomes90@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}
