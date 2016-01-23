@@ -1,1 +1,1 @@
-body{background-color:blue}
+@font-face{font-family:ProximaNovaSoft-Regular;src:url("Fonts/Proxima Nova Soft/ProximaNovaSoft-Regular.otf");font-style:normal}@font-face{font-family:ProximaNovaSoft-Bold;src:url("Fonts/Proxima Nova Soft/ProximaNovaSoft-Bold.otf");font-style:normal}body{background-color:#e44235;font-family:ProximaNovaSoft-Bold,sans-serif}body,body h4{font-style:normal}body h4{font-family:ProximaNovaSoft-Regular,sans-serif;font-weight:400}
