@@ -1,9 +1,53 @@
-$primaryColor: #8D52BA;
-$secundarycolor: #FFF;
+$primary-color: #8D52BA;
+$secundary-color: #FFF;
 $list-text-color: #959595;
 $list-secundary-color: #F1F1F1;
 $green: #16967A;
 $red: #E44235;
 $purple: #77439E;
 $menu-hover-color: #F7F0FC;
+
+/*
+    fonts scale
+             */
 $baseline: 16px;
+$type-scale: (
+
+  small: (
+    font-size: 0.875rem, /* 14px */
+    line-height: 115%
+  ),
+  default: (
+    font-size: 1em, /* 16px */
+    line-height: 100%
+  ),
+  medium: (
+    font-size: 1.125rem, /* 18px */
+    line-height: 100%
+  ),
+  extra-medium: (
+    font-size: 1.125rem, /* 20px */
+    line-height: 100%
+  ),
+  large: (
+    font-size: 1.250rem,/* 24px */
+    line-height: 121
+  ),
+  extralarge: (
+    font-size: 1.778rem, /* 32px */
+    line-height: 119%
+  )
+);
+@function font-size($level) {
+  @return map-get(
+    map-get($type-scale, $level), 'font-size');
+}
+
+@function line-height($level) {
+  @return map-get(
+    map-get($type-scale, $level), 'line-height');
+}
+@mixin type-scale($level) {
+  font-size: font-size($level);
+  line-height: line-height($level);
+}

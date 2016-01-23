@@ -1,31 +1,59 @@
 /*
------COLORS---
-              */
+    fonts
+             */
 @font-face {
   font-family: ProximaNovaSoft-Regular;
-  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Regular.otf");
-  font-style: normal; }
+  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Regular.otf"); }
 
 @font-face {
   font-family: ProximaNovaSoft-Medium;
-  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Medium.otf");
-  font-style: normal; }
+  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Medium.otf"); }
 
 @font-face {
   font-family: ProximaNovaSoft-Semibold;
-  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Semibold.otf");
-  font-style: normal; }
+  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Semibold.otf"); }
 
 @font-face {
   font-family: ProximaNovaSoft-Bold;
-  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Bold.otf");
-  font-style: normal; }
+  src: url("./Fonts/Proxima Nova Soft/ProximaNovaSoft-Bold.otf"); }
+
+/*
+    fonts
+             */
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%auto;
+  height: 500px;
+  /* test only */ }
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: 300ms ease all;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.show-nav .canvas {
+  -webkit-transform: translateX(18.375em);
+  transform: translateX(18.375em);
+  -webkit-transform: translate3d(18.375em, 0, 0);
+  transform: translate3d(18.375em, 0, 0); }
+
+.menu {
+  width: 18.375em;
+  /* 294px*/
+  height: 100%;
+  position: absolute;
+  background-color: #E44235;
+  top: 0;
+  left: -18.375em; }
 
 body {
-  background-color: #E44235;
-  font-family: 'ProximaNovaSoft-Bold', sans-serif;
-  font-style: normal; }
-  body h4 {
-    font-family: 'ProximaNovaSoft-Regular', sans-serif;
-    font-style: normal;
-    font-weight: normal; }
+  font-size: 0.875rem;
+  line-height: 115%; }
