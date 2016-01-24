@@ -2,7 +2,6 @@
   @font-face {
     font-family: $font-family;
       src: url('#{$file-path}.otf');
-
   }
 }
 @include font-face(ProximaNovaSoft-Regular, '../Fonts/Proxima Nova Soft/ProximaNovaSoft-Regular');
@@ -11,14 +10,14 @@
 @include font-face(ProximaNovaSoft-Bold, '../Fonts/Proxima Nova Soft/ProximaNovaSoft-Bold');
 
 @mixin ProximaNovaSoft-Regular {
-  font-family: 'ProximaNovaSoft-Regular', sans-serif;
+  font-family: 'ProximaNovaSoft-Regular';
    }
 @mixin ProximaNovaSoft-Medium {
-  font-family: 'ProximaNovaSoft-Medium', sans-serif;
+  font-family: 'ProximaNovaSoft-Medium';
 }
 @mixin ProximaNovaSoft-Semibold {
-    font-family: 'ProximaNovaSoft-SemiBold', sans-serif;
+    font-family: 'ProximaNovaSoft-SemiBold';
     }
 @mixin ProximaNovaSoft-Bold {
-       font-family: 'ProximaNovaSoft-Bold', sans-serif;
+       font-family: 'ProximaNovaSoft-Bold';
     }

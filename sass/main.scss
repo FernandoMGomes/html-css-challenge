@@ -1,11 +1,200 @@
 @import "variables";
 @import "fonts";
 @import "off-canvas";
-body{
+body, html{
   font-size: $baseline !important;
   margin: 0;
+  height: 100%;
 }
 h1,h2,h3,h4{
   margin: 0;
   font-weight: normal;
+}
+#wrapper{
+  position:relative;
+  overflow: hidden;
+  width: 100%auto;
+  height:100%; /* test only */
+}
+.canvas{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+  transition: 300ms ease all;
+  backface-visibility: hidden;
+}
+.show-nav .canvas {
+  transform: translateX(18.375em);
+  transform: translate3d(18.375em, 0, 0);
+}.show-nav .container-canvas .overlay-canvas {
+  background-color: #000;;
+  opacity:0.5;
+}
+.container-canvas{
+  height: 100%;
+  background-color: $primary-color;
+  transition: 300ms ease all;
+  opacity: 1;
+  header{
+    height: 1.438em;
+    width: 100%;
+    background-color: $purple;
+    padding: 1em 0;
+  .hamburger {
+    position: absolute;
+    height: 1.875em;
+    width: 1.875em;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.8em;
+    box-sizing: border-box;
+    cursor: pointer;
+    .hamburger--line {
+        width: 0.675em;
+        height: 0.125em;
+        display: block;
+        background-color: $secundary-color;
+        position: absolute;
+    }
+    .hamburger--line::before,
+    .hamburger--line::after{
+        content: '';
+        height: 0.125em;
+        display: block;
+        background-color: $secundary-color;
+        position: absolute;
+    }
+
+    .hamburger--line::before {
+        top: -0.438em;
+        width: 0.875em;
+    }
+
+    .hamburger--line::after {
+        top: 0.438em;
+        width: 30%;
+    }
+  }
+  h1{
+    @include ProximaNovaSoft-Regular;
+    @include type-scale(extra-medium);
+    color: $secundary-color;
+    text-align: center;
+  }
+  }
+
+.slider{
+  color: $secundary-color;
+  text-align: center;
+  background-color: $primary-color;
+  h3{
+    @include ProximaNovaSoft-Regular ;
+    @include type-scale(medium);
+    padding: 1em 0;
+    display: block;
+
+  }
+  h1{
+    @include ProximaNovaSoft-Regular;
+    @include type-scale(extra-large);
+    display: block;
+
+  }
+  h2{
+    @include ProximaNovaSoft-Semibold;
+    @include type-scale(large);
+    margin:0.5em 0;
+    display: block;
+  }
+  .buttons-slider{
+    padding: 0.5em 0;
+    display: block;
+    text-align: center;
+    .change-slide{
+      width: 0.7em;
+      height: 0.7em;
+      border-radius: 0.35em;
+      background-color: $secundary-color;
+      display: inline-block;
+      opacity: 0.5;
+    }
+    .active-slider{
+      opacity: 1;
+    }
+  }
+}
+  .info{
+    background-color: $purple;
+    padding: 0.813em 0;
+    h2{
+      @include ProximaNovaSoft-Medium;
+      @include type-scale(small);
+      color: $secundary-color;
+      margin-left: 0.5em;
+
+    }
+  }
+  .list{
+    width: 100%;
+    max-height: 35.500em;
+    overflow-y: scroll;
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li{
+        background-color: $secundary-color;
+        padding: 0.815em 0.5em;
+        &:nth-child(odd){
+          background-color:$list-secundary-color;
+        }
+        h1{
+          @include ProximaNovaSoft-Semibold;
+          @include type-scale(default);
+          color: $list-text-color;
+          display: inline-block;
+          width: 50%;
+        }
+        h2{
+          @include ProximaNovaSoft-Semibold;
+          @include type-scale(default);
+          display: inline-block;
+          float: right;
+          width: 50%;
+          text-align: right;
+
+        }
+        h3{
+          @include ProximaNovaSoft-Medium;
+          @include type-scale(small);
+          color: $list-text-color;
+          opacity: 0.6;
+          width: 50%;
+          display: inline-block;
+          margin-top: 0.5em;
+        }
+        h4{
+          @include ProximaNovaSoft-Medium;
+          @include type-scale(small);
+          color: $list-text-color;
+          opacity: 0.6;
+          float: right;
+          width: 50%;
+          display: inline-block;
+          text-align: right;
+          margin-top: 0.5em;
+
+        }
+        .green{
+          color: $green;
+        }
+        .red{
+          color: $red;
+        }
+      }
+    }
+
+  }
 }

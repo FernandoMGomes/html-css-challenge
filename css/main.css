@@ -36,35 +36,6 @@
   font-family: ProximaNovaSoft-Bold;
   src: url("../Fonts/Proxima Nova Soft/ProximaNovaSoft-Bold.otf"); }
 
-#wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%auto;
-  height: 568px;
-  /* test only */ }
-
-.canvas {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  transition: 300ms ease all;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.show-nav .canvas {
-  -webkit-transform: translateX(18.375em);
-  transform: translateX(18.375em);
-  -webkit-transform: translate3d(18.375em, 0, 0);
-  transform: translate3d(18.375em, 0, 0); }
-
-.show-nav .container-canvas {
-  background-color: #000;
-  opacity: 0.5; }
-
 .menu {
   width: 18.375em;
   height: 568px;
@@ -85,68 +56,209 @@
     .menu .user-info h2 {
       font-size: 1.125em;
       line-height: 100%;
-      font-family: 'ProximaNovaSoft-Regular', sans-serif;
+      font-family: 'ProximaNovaSoft-Regular';
       display: inline-block;
       margin-top: 1.2em;
       margin-left: 0.5em;
       color: #FFF; }
   .menu ul {
     list-style: none;
-    padding-left: 1em; }
+    padding: 0;
+    margin: 0; }
     .menu ul li {
-      height: 1.875em;
-      padding: 0.781em 0; }
+      height: 3.438em; }
+      .menu ul li a {
+        display: block; }
+        .menu ul li a:hover {
+          background-color: #F7F0FC; }
       .menu ul li img {
+        padding-left: 1em;
         width: 1.875em;
-        height: 1.875em;
-        vertical-align: middle; }
+        vertical-align: middle;
+        margin: 0.781em 0; }
       .menu ul li h2 {
-        font-family: 'ProximaNovaSoft-Regular', sans-serif;
+        font-family: 'ProximaNovaSoft-Regular';
         display: inline-block;
         font-size: 1em;
         line-height: 100%;
         color: #77439E;
-        margin-left: 0.5em; }
+        margin-left: 0.5em;
+        height: 1.875em; }
+
+body, html {
+  font-size: 16px !important;
+  margin: 0;
+  height: 100%; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: normal; }
+
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%auto;
+  height: 100%;
+  /* test only */ }
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: 300ms ease all;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.show-nav .canvas {
+  -webkit-transform: translateX(18.375em);
+  transform: translateX(18.375em);
+  -webkit-transform: translate3d(18.375em, 0, 0);
+  transform: translate3d(18.375em, 0, 0); }
+
+.show-nav .container-canvas .overlay-canvas {
+  background-color: #000;
+  opacity: 0.5; }
 
 .container-canvas {
   height: 100%;
   background-color: #8D52BA;
   transition: 300ms ease all;
   opacity: 1; }
-  .container-canvas .hamburger {
-    position: absolute;
-    height: 1.875em;
-    width: 1.875em;
-    margin-top: 20px;
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    padding-top: 0.8em;
-    box-sizing: border-box;
-    cursor: pointer; }
-    .container-canvas .hamburger .hamburger--line {
-      width: 0.675em;
-      height: 0.125em;
+  .container-canvas header {
+    height: 1.438em;
+    width: 100%;
+    background-color: #77439E;
+    padding: 1em 0; }
+    .container-canvas header .hamburger {
+      position: absolute;
+      height: 1.875em;
+      width: 1.875em;
+      margin-left: 0.5em;
+      padding-left: 0.5em;
+      padding-top: 0.8em;
+      box-sizing: border-box;
+      cursor: pointer; }
+      .container-canvas header .hamburger .hamburger--line {
+        width: 0.675em;
+        height: 0.125em;
+        display: block;
+        background-color: #FFF;
+        position: absolute; }
+      .container-canvas header .hamburger .hamburger--line::before,
+      .container-canvas header .hamburger .hamburger--line::after {
+        content: '';
+        height: 0.125em;
+        display: block;
+        background-color: #FFF;
+        position: absolute; }
+      .container-canvas header .hamburger .hamburger--line::before {
+        top: -0.438em;
+        width: 0.875em; }
+      .container-canvas header .hamburger .hamburger--line::after {
+        top: 0.438em;
+        width: 30%; }
+    .container-canvas header h1 {
+      font-family: 'ProximaNovaSoft-Regular';
+      font-size: 1.25em;
+      line-height: 100%;
+      color: #FFF;
+      text-align: center; }
+  .container-canvas .slider {
+    color: #FFF;
+    text-align: center;
+    background-color: #8D52BA; }
+    .container-canvas .slider h3 {
+      font-family: 'ProximaNovaSoft-Regular';
+      font-size: 1.125em;
+      line-height: 100%;
+      padding: 1em 0;
+      display: block; }
+    .container-canvas .slider h1 {
+      font-family: 'ProximaNovaSoft-Regular';
+      font-size: 2em;
+      line-height: 119%;
+      display: block; }
+    .container-canvas .slider h2 {
+      font-family: 'ProximaNovaSoft-SemiBold';
+      font-size: 1.5em;
+      line-height: 121%;
+      margin: 0.5em 0;
+      display: block; }
+    .container-canvas .slider .buttons-slider {
+      padding: 0.5em 0;
       display: block;
-      background-color: #FFF;
-      position: absolute; }
-    .container-canvas .hamburger .hamburger--line::before,
-    .container-canvas .hamburger .hamburger--line::after {
-      content: '';
-      height: 0.125em;
-      display: block;
-      background-color: #FFF;
-      position: absolute; }
-    .container-canvas .hamburger .hamburger--line::before {
-      top: -0.438em;
-      width: 0.875em; }
-    .container-canvas .hamburger .hamburger--line::after {
-      top: 0.438em;
-      width: 30%; }
-
-body {
-  font-size: 16px !important;
-  margin: 0; }
-
-h1, h2, h3, h4 {
-  margin: 0;
-  font-weight: normal; }
+      text-align: center; }
+      .container-canvas .slider .buttons-slider .change-slide {
+        width: 0.7em;
+        height: 0.7em;
+        border-radius: 0.35em;
+        background-color: #FFF;
+        display: inline-block;
+        opacity: 0.5; }
+      .container-canvas .slider .buttons-slider .active-slider {
+        opacity: 1; }
+  .container-canvas .info {
+    background-color: #77439E;
+    padding: 0.813em 0; }
+    .container-canvas .info h2 {
+      font-family: 'ProximaNovaSoft-Medium';
+      font-size: 0.8em;
+      line-height: 115%;
+      color: #FFF;
+      margin-left: 0.5em; }
+  .container-canvas .list {
+    width: 100%;
+    max-height: 35.500em;
+    overflow-y: scroll; }
+    .container-canvas .list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .container-canvas .list ul li {
+        background-color: #FFF;
+        padding: 0.815em 0.5em; }
+        .container-canvas .list ul li:nth-child(odd) {
+          background-color: #F1F1F1; }
+        .container-canvas .list ul li h1 {
+          font-family: 'ProximaNovaSoft-SemiBold';
+          font-size: 1em;
+          line-height: 100%;
+          color: #959595;
+          display: inline-block;
+          width: 50%; }
+        .container-canvas .list ul li h2 {
+          font-family: 'ProximaNovaSoft-SemiBold';
+          font-size: 1em;
+          line-height: 100%;
+          display: inline-block;
+          float: right;
+          width: 50%;
+          text-align: right; }
+        .container-canvas .list ul li h3 {
+          font-family: 'ProximaNovaSoft-Medium';
+          font-size: 0.8em;
+          line-height: 115%;
+          color: #959595;
+          opacity: 0.6;
+          width: 50%;
+          display: inline-block;
+          margin-top: 0.5em; }
+        .container-canvas .list ul li h4 {
+          font-family: 'ProximaNovaSoft-Medium';
+          font-size: 0.8em;
+          line-height: 115%;
+          color: #959595;
+          opacity: 0.6;
+          float: right;
+          width: 50%;
+          display: inline-block;
+          text-align: right;
+          margin-top: 0.5em; }
+        .container-canvas .list ul li .green {
+          color: #16967A; }
+        .container-canvas .list ul li .red {
+          color: #E44235; }
