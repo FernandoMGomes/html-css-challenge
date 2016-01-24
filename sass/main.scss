@@ -88,7 +88,7 @@ h1,h2,h3,h4{
 .slider{
   color: $secundary-color;
   text-align: center;
-  background-color: $primary-color;
+  background: linear-gradient(to right,#a97fc8, #854bb0);
   h3{
     @include ProximaNovaSoft-Regular ;
     @include type-scale(medium);

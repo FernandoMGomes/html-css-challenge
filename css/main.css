@@ -170,7 +170,7 @@ h1, h2, h3, h4 {
   .container-canvas .slider {
     color: #FFF;
     text-align: center;
-    background-color: #8D52BA; }
+    background: linear-gradient(to right, #a97fc8, #854bb0); }
     .container-canvas .slider h3 {
       font-family: 'ProximaNovaSoft-Regular';
       font-size: 1.125em;
