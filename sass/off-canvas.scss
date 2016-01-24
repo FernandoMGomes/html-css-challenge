@@ -1,9 +1,10 @@
 @import "variables";
+@import "fonts";
 #wrapper{
   position:relative;
   overflow: hidden;
   width: 100%auto;
-  height:500px; /* test only */
+  height:568px; /* test only */
 }
 .canvas{
   width: 100%;
@@ -17,12 +18,100 @@
 .show-nav .canvas {
   transform: translateX(18.375em);
   transform: translate3d(18.375em, 0, 0);
+}.show-nav .container-canvas {
+  background-color: #000;
+  opacity:0.5;
 }
 .menu{
-  width:18.375em; /* 294px*/
-  height: 100%;
+  width:18.375em;
+  height: 568px;
   position: absolute;
-  background-color: $red;
+  background-color: $secundary-color;
   top: 0;
   left: -18.375em;
+  .user-info{
+    background-image: url("../Images/Side Menu/menu-header-bg.png");
+    height: 4.67em;
+    padding-top: 4.750em;
+    img{
+      width: 3.125em;
+      height: 3.125em;
+      border-radius: 1.5625em;
+      margin-left: 1em;
+      vertical-align:middle;
+    }
+    h2{
+      @include type-scale(medium);
+      @include ProximaNovaSoft-Regular;
+      display: inline-block;
+      margin-top: 1.2em;
+      margin-left: 0.5em;
+      color: $secundary-color;
+    }
+
+  }
+  ul{
+    list-style: none;
+    padding-left: 1em;
+    li{
+      height:1.875em;
+      padding:0.781em 0;
+      img{
+        width: 1.875em;
+        height: 1.875em;
+        vertical-align:middle;
+      }
+      h2{
+        @include ProximaNovaSoft-Regular;
+        display: inline-block;
+        @include type-scale(default);
+        color:$purple;
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
+.container-canvas{
+  height: 100%;
+  background-color: $primary-color;
+  transition: 300ms ease all;
+  opacity: 1;
+  .hamburger {
+    position: absolute;
+    height: 1.875em;
+    width: 1.875em;
+    margin-top: 20px;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.8em;
+    box-sizing: border-box;
+    cursor: pointer;
+    .hamburger--line {
+        width: 0.675em;
+        height: 0.125em;
+        display: block;
+        background-color: $secundary-color;
+        position: absolute;
+    }
+
+
+    .hamburger--line::before,
+    .hamburger--line::after{
+        content: '';
+        height: 0.125em;
+        display: block;
+        background-color: $secundary-color;
+        position: absolute;
+    }
+
+    .hamburger--line::before {
+        top: -0.438em;
+        width: 0.875em;
+    }
+
+    .hamburger--line::after {
+        top: 0.438em;
+        width: 30%;
+    }
+  }
 }

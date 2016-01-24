@@ -5,10 +5,10 @@
 
   }
 }
-@include font-face(ProximaNovaSoft-Regular, './Fonts/Proxima Nova Soft/ProximaNovaSoft-Regular');
-@include font-face(ProximaNovaSoft-Medium, './Fonts/Proxima Nova Soft/ProximaNovaSoft-Medium');
-@include font-face(ProximaNovaSoft-Semibold, './Fonts/Proxima Nova Soft/ProximaNovaSoft-Semibold');
-@include font-face(ProximaNovaSoft-Bold, './Fonts/Proxima Nova Soft/ProximaNovaSoft-Bold');
+@include font-face(ProximaNovaSoft-Regular, '../Fonts/Proxima Nova Soft/ProximaNovaSoft-Regular');
+@include font-face(ProximaNovaSoft-Medium, '../Fonts/Proxima Nova Soft/ProximaNovaSoft-Medium');
+@include font-face(ProximaNovaSoft-Semibold, '../Fonts/Proxima Nova Soft/ProximaNovaSoft-Semibold');
+@include font-face(ProximaNovaSoft-Bold, '../Fonts/Proxima Nova Soft/ProximaNovaSoft-Bold');
 
 @mixin ProximaNovaSoft-Regular {
   font-family: 'ProximaNovaSoft-Regular', sans-serif;

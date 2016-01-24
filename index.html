@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>TEST</title>
-  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <meta name="viewport" content="initial-scale=1">
   <link rel="stylesheet" href="css/main.min.css">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
@@ -14,11 +14,26 @@
   <div id="wrapper">
     <div class="canvas">
       <div class="menu">
-        menu
+        <div class="user-info">
+          <img src="" alt="">
+          <h2>John Doe</h2>
+        </div>
+        <ul>
+          <li><img src="Images/Side Menu/ic-dashboard.svg" alt="" /><h2>DashBoard</h2></li>
+          <li><img src="Images/Side Menu/ic-accounts.svg" alt="" /><h2>Accounts</h2></li>
+          <li><img src="Images/Side Menu/ic-cards.svg" alt="" /><h2>Cards</h2></li>
+          <li><img src="Images/Side Menu/ic-payments.svg" alt="" /><h2>Payments</h2></li>
+          <li><img src="Images/Side Menu/ic-transfers.svg" alt="" /><h2>Transfers</h2></li>
+          <li><img src="Images/Side Menu/ic-airtime.svg" alt="" /><h2>AirTime</h2></li>
+          <li><img src="Images/Side Menu/ic-settings.svg" alt="" /><h2>Settings</h2></li>
+        </ul>
       </div>
       <div class="container-canvas">
-        canvas
-        <a href="#" class="toggle-nav">cenas</a>
+      <a href="#" class="toggle-nav">
+        <div class="hamburger">
+          <div class="hamburger--line"></div>
+        </div>
+      </a>
       </div>
     </div>
 
