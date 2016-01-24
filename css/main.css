@@ -210,9 +210,11 @@ h1, h2, h3, h4 {
       line-height: 115%;
       color: #FFF;
       margin-left: 0.5em; }
+  .container-canvas .container-list {
+    height: 100%; }
   .container-canvas .list {
     width: 100%;
-    max-height: 35.500em;
+    max-height: 25.500em;
     overflow-y: scroll; }
     .container-canvas .list ul {
       list-style: none;
